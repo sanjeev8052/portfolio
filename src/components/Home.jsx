@@ -6,19 +6,22 @@ import linkedinIcon from '../assets/Images/linkedin-logo.png'
 import facebookIcon from '../assets/Images/facebook-logo.png'
 import ProfileImage from '../assets/Images/Profile.jpg'
 import Educations from './Educations'
+import Skills from './Skills'
+import ProjectCarousel from './ProjectsCarousel'
+import Footer from './Footer'
 
 const Home = () => {
     return (
         <>
             <Box className="Home" >
                 <Grid container mb={10}>
-                    <Grid sx={{ fontSize: { xs: "13px", lg: "18px", } }} container direction={"column"} lg={6} p={[5, 20]}>
+                    <Grid sx={{ fontSize: { xs: "12px", lg: "18px", } }} container direction={"column"} lg={6} p={[3, 20]}>
                         <h1>Hello, gays</h1>
                         <h1> My name is <i>Sanjeev Gaund</i></h1>
 
                         <h1>I am a <i>FullStack Developer</i> </h1>
                         <Stack columnGap={2} mt={3} direction={"row"}>
-                            <a target='_blank' href='http://linkedin.com/in/thesanjeev'>
+                            <a target='_blank' title='Link' href='http://linkedin.com/in/thesanjeev'>
                                 <img width={40} height={40} src={linkedinIcon} alt="" />
                             </a>
 
@@ -41,9 +44,15 @@ const Home = () => {
                         </Box>
                     </Grid>
                 </Grid>
-                <Educations/>
+                <Educations />
+                <p style={{ margin: "3rem" }} />
+                <Skills />
+                <p style={{ margin: "2rem" }} />
+                <ProjectCarousel />
+                <p style={{ margin: "2rem" }} />
+                <Footer />
             </Box>
-            
+
         </>
 
     )

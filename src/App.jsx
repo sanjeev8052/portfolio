@@ -15,7 +15,12 @@ function App() {
       children: [{
         index: true,
         element: <Home />
-      }]
+      },
+      {
+        path: "skills",
+        element: <h1>Skills</h1>
+      }
+      ]
 
     }
   ])

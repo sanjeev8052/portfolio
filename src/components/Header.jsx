@@ -66,11 +66,11 @@ function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            Sanjeev
+            {"< Sanjeev / >"}
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button  key={item} sx={{ color:"white", ":hover":{color:"tomato"} }}>
+              <Button key={item} sx={{ color: "white", ":hover": { color: "tomato" } }}>
                 {item}
               </Button>
             ))}

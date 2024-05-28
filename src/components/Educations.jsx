@@ -2,7 +2,7 @@ import React from 'react'
 import GraduationCap from '../assets/Images/Cap.png'
 import JPDawerImage from '../assets/Images/JPDawer.jpg'
 import CBPatel from '../assets/Images/CBPatel.jpg'
-import { Box, Grid, Stack } from '@mui/material'
+import { Box, Grid, Stack, Button } from '@mui/material'
 
 
 const Educations = () => {
@@ -48,7 +48,7 @@ const Educations = () => {
                         </Grid>
                     </Grid>
                     <Grid xs={12} lg={12}><p><hr /></p></Grid>
-                    <Grid container  lg={12}>
+                    <Grid container lg={12}>
                         <Grid lg={4} >
                             <img src={CBPatel} width={"100%"} alt="" />
                         </Grid>
