@@ -12,12 +12,13 @@ const Footer = () => {
             <Box
                 component="footer"
                 sx={{
-                    backgroundColor: "rgba(0,0,0,0.4)",
-                    color: "darkgray"
+                    backgroundColor: "rgba",
+                    color: "darkgray",
+                    padding:2
 
                 }}
             >
-                <Container sx={{ color: "white" }} maxWidth="lg">
+                <Container sx={{ color: "secondary.main" }} maxWidth="lg">
                     <Grid container spacing={5}>
                         <Grid item xs={12} sm={4}>
                             <Typography variant="h6" color="" gutterBottom>

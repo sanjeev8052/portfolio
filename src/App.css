@@ -4,16 +4,19 @@
 *{
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Home Page  */
 .Home{
-  background-color: #202123;
+
   min-height: 91vh;
   width: 100%;
+  overflow-x: hidden;
 
   h1{
-    color: rgb(234, 237, 242);
+  
     font-family: "Roboto", sans-serif;
   }
   h1>i{
@@ -40,4 +43,47 @@
   margin-bottom: 10px;
   color: white;
   cursor: pointer;
+}
+
+.dAppBarItem{
+  text-decoration: none;
+  color: aliceblue;
+  letter-spacing: 1px;
+
+  :hover{
+    color: tomato;
+  }
+  
+}
+
+.appBarItem{
+  text-decoration: none;
+  color: aliceblue;
+  letter-spacing: 1px;
+  margin: 10px;
+}
+
+#Home{
+  animation: leftCome 2s ease-in-out;
+}
+#Education{
+  animation: RightCome 2s ease-in-out;
+}
+
+@keyframes leftCome {
+  0%{
+    transform: translateX(-1000px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+@keyframes RightCome {
+  0%{
+    transform: translateX(1000px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
 }
